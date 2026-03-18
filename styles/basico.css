@@ -19,6 +19,12 @@
 img, a {
   -webkit-user-drag: none;
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
 body{
   background-color: aliceblue;
 }
@@ -29,11 +35,16 @@ h1{
 h2{
   font-family: var(--fonte4);
 }
+h3{
+  color: white;
+  font-family: var(--fonte4);
+  text-decoration: none;
+}
 p{
   font-family: var(--fonte4);
 }
 .card{
-  background: #858585;
+  background: #000000;
   border-radius: 20px;
   padding: 10px;
   width: 90%;
@@ -91,6 +102,9 @@ iframe{
 
 .description.open{
   max-height: 1000px;
+}
+footer{
+  text-align: center;
 }
 
 .glow-card{
