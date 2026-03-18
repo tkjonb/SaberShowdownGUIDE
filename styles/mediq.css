@@ -17,4 +17,14 @@
     footer{
         width: 1000px;
     }
+    .zoom{
+     transition: transform 0.1s ease; /* suavidade */
+}
+
+.zoom:hover {
+  transform: scale(1.01); /* aumenta 10% */
+}
+div.zoom:active{
+    transform: scale(1);
+}
 }
