@@ -105,14 +105,14 @@ div.video > iframe{
     0 0 48px rgb(255, 255, 255);
 }
 .zoom{
-     transition: transform 0.3s ease; /* suavidade */
+     transition: transform 0.1s ease; /* suavidade */
 }
 
 .zoom:hover {
-  transform: scale(1.020); /* aumenta 10% */
+  transform: scale(1.01); /* aumenta 10% */
 }
 div.zoom:active{
-    transform: scale(95%);
+    transform: scale(0.99);
 }
 
 
