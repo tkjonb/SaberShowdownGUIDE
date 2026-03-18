@@ -11,11 +11,14 @@
     --fonte4:"minecraft";
 }
 * {
+  -webkit-user-select: none;
   user-select: none;
-  margin: 0px;
-  padding: 0px;
+  -webkit-tap-highlight-color: transparent;
 }
 
+img, a {
+  -webkit-user-drag: none;
+}
 body{
   background-color: aliceblue;
 }

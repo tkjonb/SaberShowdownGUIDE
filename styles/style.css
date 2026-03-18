@@ -9,9 +9,11 @@
     --fonte2:"Passion One", sans-serif;
     --fonte3:"Gelasio", cursive, serif;
     --fonte4:"minecraft";
-}
+    }
 * {
+  -webkit-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
   margin: 0px;
   padding: 0px;
 }
@@ -24,6 +26,7 @@ img{
     display: block;
     margin: auto;
     width: 350px;
+    -webkit-user-drag: none;
 }
 .zonewhite{
     background-color: aliceblue;
@@ -31,9 +34,6 @@ img{
     border-radius: 10px;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.231);
     padding: 0px 0px 10px 0px;
-}
-img, a{
-  -webkit-tap-highlight-color: transparent;
 }
 h1{
     font-size: 2em;
@@ -67,6 +67,7 @@ span{
 }
 a{
     text-decoration: none;
+    -webkit-user-drag: none;
 }
 a:active{
     text-decoration: none;
