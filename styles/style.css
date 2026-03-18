@@ -112,7 +112,7 @@ div.video > iframe{
   transform: scale(1.01); /* aumenta 10% */
 }
 div.zoom:active{
-    transform: scale(0.99);
+    transform: scale(1);
 }
 
 
