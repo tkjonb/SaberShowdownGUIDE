@@ -177,8 +177,8 @@ animation:gradientMove 6s ease infinite;
 }
 
 .zoom:hover {
-  transform: scale(1.020); /* aumenta 10% */
+  transform: scale(1.010); /* aumenta 10% */
 }
 div.zoom:active{
-    transform: scale(0.97);
+    transform: scale(1);
 }
