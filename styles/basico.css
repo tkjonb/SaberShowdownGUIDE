@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Passion+One:wght@400;700;900&display=swap');
+@font-face {
+    font-family: "minecraft";
+    src: url("../MinecraftRegular-Bmg3.otf") format("opentype");
+}
+:root{
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2:"Passion One", sans-serif;
+    --fonte3:"Gelasio", cursive, serif;
+    --fonte4:"minecraft";
+}
+* {
+  user-select: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: aliceblue;
+}
+h1{
+  font-family: var(--fonte1);
+  text-align: center;
+}
+h2{
+  font-family: var(--fonte4);
+}
+p{
+  font-family: var(--fonte4);
+}
+.card{
+  background: #858585;
+  border-radius: 20px;
+  padding: 10px;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.video-container{
+  background: #e0f0c0;
+  padding: 15px;
+  width: 300px;
+  margin: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+iframe{
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  border: none;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.controls button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #000000;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.expand{
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+.description{
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.description.open{
+  max-height: 1000px;
+}
+
+.glow-card{
+position:relative;
+padding:10px;
+border-radius:20px;
+margin: 10px 10px 10px 10px;
+background:#0f172a;
+color:white;
+z-index:1;
+}
+
+/* camada brilhante */
+.glow-card::before{
+content:"";
+position:absolute;
+inset:-2px;
+border-radius:inherit;
+
+background:linear-gradient(
+45deg,
+#00f0ff,
+#9333ea,
+#22c55e,
+#00f0ff
+);
+
+background-size:300% 300%;
+
+animation:glowMove 6s linear infinite;
+
+z-index:-1;
+filter:blur(10px);
+opacity:0.8;
+}
+
+@keyframes glowMove{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+.gradient-text{
+font-size:3em;
+font-weight:800;
+
+background:linear-gradient(270deg,#00f0ff,#9333ea,#22c55e);
+background-size:400% 400%;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}

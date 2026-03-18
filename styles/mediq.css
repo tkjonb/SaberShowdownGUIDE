@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1026px){
+    header{
+        width: 100%;
+        margin: auto;
+    }
+    .zonewhite{
+        width: 100vw;
+        margin: 0px 10px 10px 10px;
+    }
+    .zonewhite > div{
+       width: 800px;
+       margin: 10px auto;
+
+    }
+    footer{
+        width: 1000px;
+    }
+}
