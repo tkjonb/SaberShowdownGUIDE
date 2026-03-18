@@ -15,7 +15,9 @@
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-
+body{
+  font-family: var(--fonte4);
+}
 img, a {
   -webkit-user-drag: none;
 }
@@ -169,4 +171,14 @@ animation:gradientMove 6s ease infinite;
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
+}
+.zoom{
+     transition: transform 0.1s ease; /* suavidade */
+}
+
+.zoom:hover {
+  transform: scale(1.020); /* aumenta 10% */
+}
+div.zoom:active{
+    transform: scale(0.97);
 }
